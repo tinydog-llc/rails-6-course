@@ -10,12 +10,21 @@
 	"settings": { 
 		"terminal.integrated.shell.linux": "/bin/bash",
 		"sqltools.connections": [{
-			"name": "Container database",
+			"name": "Rails Blog: Development",
 			"driver": "PostgreSQL",
 			"previewLimit": 50,
 			"server": "localhost",
 			"port": 5432,
-			"database": "postgres",
+      "database": "db/rails-blog-development",
+			"username": "postgres",
+			"password": "postgres"
+		},{
+			"name": "Rails Blog: Test",
+			"driver": "PostgreSQL",
+			"previewLimit": 50,
+			"server": "localhost",
+			"port": 5432,
+      "database": "db/rails-blog-test",
 			"username": "postgres",
 			"password": "postgres"
 		}]
